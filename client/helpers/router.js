@@ -1,10 +1,10 @@
 Meteor.Router.add({
   '/': 'formSubmit',
   
-  '/posts': 'postPage',
+  '/posts': 'postsList',
   
   '/posts/:_id': {
-    to: 'postPage', 
+    to: 'postsPage', 
     and: function(id) { Session.set('currentPostId', id); }
   },
   
