@@ -1,5 +1,7 @@
 Meteor.Router.add({
-  '/': 'postsList',
+  '/': 'formSubmit',
+  
+  '/posts': 'postPage',
   
   '/posts/:_id': {
     to: 'postPage', 

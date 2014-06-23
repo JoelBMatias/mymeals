@@ -1,0 +1,30 @@
+<template name="formSubmit">
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="url">Day of the weak</label>
+        <div class="controls">
+            <input name="day" type="text" value="" placeholder="Monday, Tuesday...etc"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="title">Meal of the Day</label>
+        <div class="controls">
+            <input name="meal" type="text" value="" placeholder="Lunch..Dinner.."/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="message">What Will I take to eat!</label>
+        <div class="controls">
+            <textarea name="food" type="text" value="Make me food" ></textarea>
+        </div>
+    </div> 
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</template>
