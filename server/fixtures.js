@@ -1,19 +1,19 @@
 if (Posts.find().count() === 0) {
   Posts.insert({
-    title: 'Introducing Telescope',
-    author: 'Sacha Greif',
-    url: 'http://sachagreif.com/introducing-telescope/'
+    day: 'Monday',
+    meal: 'Lunch',
+    food: 'Eggs'
   });
   
   Posts.insert({
-    title: 'Meteor',
-    author: 'Tom Coleman',
-    url: 'http://meteor.com'
+    day: 'Tuesday',
+    meal: 'Dinner',
+    food: 'Steak with rice'
   });
   
   Posts.insert({
-    title: 'The Meteor Book',
-    author: 'Tom Coleman',
-    url: 'http://themeteorbook.com'
+    day: 'Thursday',
+    meal: 'Dinner',
+    food: 'Tuna with pasta'
   });
 }
