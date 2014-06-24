@@ -9,3 +9,4 @@ router
 bootstrap
 accounts-ui-bootstrap-dropdown
 accounts-password
+reactive-table

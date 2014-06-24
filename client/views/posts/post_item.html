@@ -1,7 +1,9 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3>{{food}}</h3>
+      <h3><a href = "{{url}}">{{name}}</a></h3>
     </div>
+          <a href="{{postPagePath this}}" class="discuss btn">Add</a>
+
 	</div>
 </template>

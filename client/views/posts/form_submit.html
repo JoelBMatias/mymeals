@@ -1,9 +1,9 @@
 <template name="formSubmit">
   <form class="main">
     <div class="control-group">
-        <label class="control-label" for="url">Day of the weak</label>
+        <label class="control-label" for="url">The day of the meal!!</label>
         <div class="controls">
-            <input name="day" type="text" value="" placeholder="Monday, Tuesday...etc"/>
+            <input name="date" type="date" value="" placeholder=""/>
         </div>
     </div>
 
@@ -26,5 +26,9 @@
             <input type="submit" value="Submit" class="btn btn-primary"/>
         </div>
     </div>
+		
   </form>
+  <div class="panel-body">
+                {{> reactiveTable collection=tables settings=tableSettings}}
+            </div>
 </template>

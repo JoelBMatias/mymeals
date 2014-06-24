@@ -1,5 +1,5 @@
 Template.postPage.helpers({
-  currentPost: function() {
-    return Posts.findOne(Session.get('currentPostId'));
+  currentMeals: function() {
+    return Meals.findOne(Session.get('currentMealsId'));
   }
 });
