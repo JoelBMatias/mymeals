@@ -1,12 +1,15 @@
 Meteor.Router.add({
-  '/': 'formSubmit',
+  '/': 'main2',
   
   '/posts': 'postsList',
+  
+	'/schedule': 'schedule',
+
   
   '/posts/:_id': {
     to: 'postsPage', 
     and: function(id) { Session.set('currentPostId', id); }
   },
-  
-  '/submit': 'postSubmit'
+    
+  '/submit': 'formSubmit'
 });

@@ -1,5 +1,3 @@
-
-
 Template.formSubmit.tables = function () {
     return MealsOrg;
 }
@@ -17,17 +15,28 @@ Template.formSubmit.tableSettings = function () {
     };
 }
 
-Template.formSubmit.events({ 'submit form': function(event) {
-	event.preventDefault();
+Template.formSubmit.events({ 
+
+'submit form': function(event) {
+
+event.preventDefault();
+
 var post = {
 	date: $(event.target).find('[name=date]').val(),
 	meal: $(event.target).find('[name=meal]').val(), 
 	food: $(event.target).find('[name=food]').val()
-			}
-post._id = MealsOrg.insert(post);
-
-Meteor.Router.to('formSubmit', post); 
-	}
 	
+
+			}
+
+
+
+post._id = MealsOrg.insert(post);
+alert("Your food has been added!");
+
+//Meteor.Router.to('formSubmit'); 
+	},
+
+
 
 });

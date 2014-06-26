@@ -1,7 +1,13 @@
 <template name="formSubmit">
-  <form class="main">
+  <form class="main" name = "form">
     <div class="control-group">
         <label class="control-label" for="url">The day of the meal!!</label>
+        {{#if error}}
+		<span id="error" style="color: red;">
+    	{{error}}
+    	</span>
+    	{{/if}}
+
         <div class="controls">
             <input name="date" type="date" value="" placeholder=""/>
         </div>
@@ -24,11 +30,16 @@
     <div class="control-group">
         <div class="controls">
             <input type="submit" value="Submit" class="btn btn-primary"/>
+
         </div>
     </div>
+    
+   
 		
   </form>
   <div class="panel-body">
                 {{> reactiveTable collection=tables settings=tableSettings}}
             </div>
+            
+
 </template>
